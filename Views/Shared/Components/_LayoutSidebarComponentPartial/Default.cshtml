@@ -1,0 +1,148 @@
+﻿<div class="sidebar">
+	<div class="scrollbar-inner sidebar-wrapper">
+		<div class="user">
+			<div class="photo">
+				<img src="~/Ready-Bootstrap-Dashboard-master/assets/img/profile.jpg">
+			</div>
+			<div class="info">
+				<a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+					<span>
+						Admin
+						<span class="user-level">Yönetici</span>
+						<span class="caret"></span>
+					</span>
+				</a>
+				<div class="clearfix"></div>
+
+				<div class="collapse in" id="collapseExample" aria-expanded="true" style="">
+					<ul class="nav">
+						<li>
+							<a href="#profile">
+								<span class="link-collapse">Profilim</span>
+							</a>
+						</li>
+						<li>
+							<a href="#edit">
+								<span class="link-collapse">Şifre Değiştir</span>
+							</a>
+						</li>
+						<li>
+							<a href="#settings">
+								<span class="link-collapse">Ayarlar</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<div class="user">
+			
+			<div class="info">
+				<a class="" data-toggle="collapse" href="#collapseExamplee" aria-expanded="true">
+					<span>
+						<span class="user-level">Sayfaları Yönet</span>
+						<span class="caret"></span>
+					</span>
+				</a>
+				<div class="clearfix"></div>
+
+				<div class="collapse in" id="collapseExamplee" aria-expanded="true" style="">
+					<ul class="nav">
+						<li class="nav-item">
+							<a href="/Feature/FeatureList/">
+								<i class="la la-th"></i>
+								<p>Giriş Alanı</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="/About/AboutList/">
+								<i class="la la-table"></i>
+								<p>Hakkımda Alanı</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="/Skill/SkillList/">
+								<i class="la la-fonticons"></i>
+								<p>Yetenekler Alanı</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="/Experience/ExperienceList">
+								<i class="la la-keyboard-o"></i>
+								<p>Deneyim Alanı</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="/Portfolio/PortfolioList/">
+								<i class="la la-font"></i>
+								<p>Portfolyo Alanı</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="/Testimonial/TestimonialList">
+								<i class="la la-fonticons"></i>
+								<p>Referanslar Alanı</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="/Contact/ContactList/">
+								<i class="la la-bell"></i>
+								<p>İletişim Alanı</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="/SocialMedia/SocialMediaList">
+								<i class="la la-fonticons"></i>
+								<p>Sosyal Medya Alanı</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<ul class="nav">
+			<li class="nav-item">
+				<a href="/Default/Index/">
+					<i class="la la-home"></i>
+					<p>Siteye Git</p>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="/Message/Inbox/">
+					<i class="la la-envelope-o"></i>
+					<p>Gelen Kutusu</p>
+					@if (ViewBag.mesajsayi > 0)
+					{
+						<span class="badge badge-success">@ViewBag.mesajsayi</span>
+					}
+					else
+					{
+						
+					}
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="/ToDoList/Index/">
+					<i class="la la-clipboard"></i>
+					<p>Yapılacaklar</p>
+					@if (ViewBag.yapilacaksayi > 0)
+					{
+						<span class="badge badge-success">@ViewBag.yapilacaksayi</span>
+					}
+					else
+					{
+
+					}
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="/statistic/Index">
+					<i class="la la-pie-chart"></i>
+					<p>İstatistikler</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>

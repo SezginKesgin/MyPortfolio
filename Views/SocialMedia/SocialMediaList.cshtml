@@ -1,0 +1,52 @@
+﻿@model List<SocialMedia>
+@{
+	ViewData["Title"] = "SocialMediaList";
+	Layout = "~/Views/Layout/Index.cshtml";
+	int count = 0;
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Sosyal Medya Hesapları</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Sosyal Medya Listesi <a href="/SocialMedia/AddSocialMedia/" class="btn btn-info" style="float: right;">Yeni Sosyal Medya Ekle</a></div>
+					</div>
+					<div class="card-body">
+						<div class="card-sub">
+							Sosyal Medya ile ilgili işlemleri aşağıdaki panelden yapabilirsiniz.
+						</div>
+						<table class="table mt-3">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Sosyal Medya</th>
+									<th scope="col">Bağlantı Linki</th>
+									<th scope="col">Sosyal Medya İkonu</th>
+									<th scope="col" style="width:1%;">Sil</th>
+									<th scope="col" style="width:1%;">Güncelle</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var item in Model)
+								{
+									count++;
+									<tr>
+										<td>@count</td>
+										<td>@item.Title</td>
+										<td>@item.Url</td>
+										<td>@item.Icon</td>
+										<td><a href="/SocialMedia/DeleteSocialMedia/@item.SocialMediaId" class="btn btn-danger">Sil</a></td>
+										<td><a href="/SocialMedia/UpdateSocialMedia/@item.SocialMediaId" class="btn btn-success">Güncelle</a></td>
+									</tr>
+								}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

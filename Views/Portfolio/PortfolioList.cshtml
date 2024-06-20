@@ -1,0 +1,50 @@
+﻿@model List<Portfolio>
+@{
+    ViewData["Title"] = "PortfolioList";
+    Layout = "~/Views/Layout/Index.cshtml";
+	int count = 0;
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Portfolyo</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Portfolyo Listesi <a href="/Portfolio/AddPortfolio/" class="btn btn-info" style="float: right;">Yeni Portfolyo Ekle</a></div>
+					</div>
+					<div class="card-body">
+						<div class="card-sub">
+							Portfolyo alanı ile ilgili işlemleri aşağıdaki panelden yapabilirsiniz.
+						</div>
+						<table class="table mt-3">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Başlık</th>
+									<th scope="col">Alt Başlık</th>
+									<th scope="col" style="width:1%;">Sil</th>
+									<th scope="col" style="width:1%;">Güncelle</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var item in Model)
+								{
+									count++;
+									<tr>
+										<td>@count</td>
+										<td>@item.Title</td>
+										<td>@item.SubTitle</td>
+										<td><a href="/Portfolio/DeletePortfolio/@item.PortfolioId" class="btn btn-danger">Sil</a></td>
+										<td><a href="/Portfolio/UpdatePortfolio/@item.PortfolioId" class="btn btn-success">Güncelle</a></td>
+									</tr>
+								}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
