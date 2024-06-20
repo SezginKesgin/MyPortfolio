@@ -4,11 +4,15 @@
 <h3 align="center">Bu proje, Udemy platformunda ücretsiz olarak sunulan bir ASP.NET Core eğitimi projesidir. Özellikle ASP.NET Core ile daha önce deneyimi olmayanlar için oldukça yararlı bir içerik olduğunu düşünüyorum.</h3>
 <h3 align="center">Projemizde bir portfolyo teması üstünden SQL veri tabanını kullanarak; "Hakkımda, Deneyimlerim, Yeteneklerim, Referanslarım, İletişim Bilgilerim" gibi verilerin dinamik olarak yönetimi yapılmaktadır.</h3>
 <br/>
+
 <h2> Proje geliştirilirken aşağıdaki teknolojiler ve kütüphaneler kullanıldı:</h2>
 
 - 🛠️ ASP.NET Core (6.0)
-- 🛠️ Microsoft.Entity.FrameworkCore (6.0.3)
-- 🛠️ Microsoft.Entity.FrameworkCore.PostgreSQL (6.0.3)
+- 🛠️ Microsoft.Entity.FrameworkCore (6.0.29)
+- 🛠️ Microsoft.EntityFrameworkCore.Design (6.0.29)
+- 🛠️ Microsoft.EntityFrameworkCore.SqlServer (6.0.29)
+- 🛠️ Microsoft.EntityFrameworkCore.Tools (6.0.29)
+- 🛠️ Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.16)
 - 🛠️ Layout Kontrolü
 - 🛠️ Controller Yapısı
 - 🛠️ View Components ile Partial View Kullanımı
