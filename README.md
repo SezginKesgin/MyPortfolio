@@ -13,6 +13,11 @@
 - 🛠️ Microsoft.EntityFrameworkCore.SqlServer (6.0.29)
 - 🛠️ Microsoft.EntityFrameworkCore.Tools (6.0.29)
 - 🛠️ Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.16)
+- 🛠️ Context Sınıfı
+- 🛠️ Migration İşlemleri
+- 🛠️ Paket Yönetimleri
+- 🛠️ Html, Css, Bootstrap, Javascript İçerikleri
+- 🛠️ MSSQL Veritabanı
 - 🛠️ Layout Kontrolü
 - 🛠️ Controller Yapısı
 - 🛠️ View Components ile Partial View Kullanımı
@@ -22,9 +27,8 @@
 - 🛠️ View Yapısı
 - 🛠️ Linq Sorguları
 - 🛠️ Entity Framework Sorguları
-- 🛠️ Hazır Template Kurulumu ve Düzenlenmesi
-- 🛠️ Dinamik Web Projeleri Oluşturma
 - 🛠️ Dashboard yapısı
+- 🛠️ Hazır Template Kurulumu ve Düzenlenmesi
 
 
 <h2>Admin Panelinde:</h2>
